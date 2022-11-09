@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %} photo uploader {% endblock %}
+
+{% block content %}
+
+        <form method = "POST" enctype = "multipart/form-data" action="/photoform">
+            <input type = "file" id="myFile" name="uploaded-file">
+            <input type = "submit" value="submit">
+        </form>
+        <br>
+        <p style="color:blue;">Choose image file to upload</p>
+
+        <a href="/show_image"> show image </a>
+     
+
+{% endblock %}
